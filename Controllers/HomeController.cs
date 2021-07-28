@@ -23,9 +23,16 @@ namespace cal.Controllers
             return View();
         }
          [HttpPost]
-        public IActionResult Index(int num1, int num2)
+        public IActionResult Index(int num1, int num2, string btn)
         {
-            ViewBag.s=num1+num2;
+            if(btn=="+")
+            {
+              ViewBag.s=num1+num2;
+            }
+            if(btn=="-")
+            {
+             ViewBag.s=num1-num2;
+            }
             return View();
         }
 
