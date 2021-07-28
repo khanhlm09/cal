@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Máy tính</h1>
+    <form action="Index" method="post">
+        number 1: <input type="number" name="num1"><br>  
+        number 2: <input type="number" name="num2"><br>
+        Phép tính: <input type="submit" value="+"><br>
+        Kết quả: <input type="number" value=@ViewBag.s><br>
+      
+    </form>
+</div>
