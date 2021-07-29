@@ -33,6 +33,14 @@ namespace cal.Controllers
             {
              ViewBag.s=num1-num2;
             }
+             if(btn=="x")
+            {
+              ViewBag.s=num1*num2;
+            }
+            if(btn=="/")
+            {
+             ViewBag.s=num1/num2;
+            }
             return View();
         }
 
